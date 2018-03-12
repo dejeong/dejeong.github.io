@@ -10,14 +10,40 @@
 
   <!-- <link rel="stylesheet" href="https://rawgit.com/dejeong/dejeong.github.io/master/assets/fonts/fonts.css"> -->
   <link rel="stylesheet" href="styles/styles-00.css">
+  <?php
+  $action = $_GET["action"];
+  $myText = $_POST["mytext"];
+
+  if($action = "save") {
+    $targetFolder = "/path/to/folder";
+    file_put_contents($targetFolder."mytext.txt", $myText);
+  }
+  ?>
 </head>
 <body>
   <section class="container__grid">
-    <form align="center" action="http://www.google.com">
+    <!-- <form align="center" action="http://www.google.com">
     <p> CONFESSION:</p>
     <input type="text" />
     <input type="submit" value="Submit"/>
-    <input type="reset" value="Reset" />
+    <input type="reset" value="Reset" /> -->
+
+    <?php
+    $action = $_GET["action"];
+    $myText = $_POST["mytext"];
+
+    if($action = "save") {
+      $targetFolder = "input/txt";
+      file_put_contents($targetFolder."mytext.txt", $myText);
+    }
+    ?>
+
+    <h1>HELLO</h1>
+    <form action="?action=save" name="myform" method="post">
+      <input type=text name="mytext">
+      <input type="submit" value="save">
+    </form>
+    <!-- <a href="pages/prototype-01.php">prototype-01</a> -->
   </section>
   <script type="text/javascript" src="scripts/scripts-00.js"></script>
 </body>
