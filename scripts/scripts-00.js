@@ -72,7 +72,7 @@ $('.site-close').on('click', function() {
 
 $('.project-preview img').on('click', function() {
   var page = $(this).attr('id');
-  $('.site-projects, .site-icon, .project-preview img').animate({
+  $('.site-projects, .site-icon, .project-preview img, .site-info').animate({
       opacity: 0,
     }, 750, function() {
       location.href = 'pages/' + page + '.html';

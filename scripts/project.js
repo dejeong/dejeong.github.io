@@ -17,7 +17,6 @@ $(window).on('load', function() {
 
 $('.site-icon').on('click', function(){
   siteInfo.removeClass('display');
-  $('.project-container').addClass('display');
 
   $('#profile').attr('src', '../assets/icon-01.png');
   setTimeout(function () {
@@ -30,7 +29,6 @@ $('.site-info').on('click', function() {
   if (siteClicked) {
     siteClicked = false;
     siteInfo.css({'bottom': (-1)*infoHeight});
-    $('.project-container').removeClass('display');
 
     $('#profile').attr('src', '../assets/icon-00.png');
     setTimeout(function () {

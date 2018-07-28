@@ -81,7 +81,7 @@ a:hover,
 	font-size: 7vh;
 	line-height: 1.25;
 	padding: 35px;
-	position: absolute;
+	position: fixed;
 	mix-blend-mode: multiply;
 	z-index: 10;
 	transition: 0.5s;
