@@ -38,7 +38,7 @@ $('.site-info').on('click', function() {
 });
 
 $('.site-title').on('click', function() {
-  $('.site-icon, .project-container').animate({
+  $('.site-icon, .project-container, .site-info').animate({
       opacity: 0,
     }, 750, function() {
       location.href = '../index.html';

@@ -82,6 +82,7 @@ a:hover,
 	line-height: 1.25;
 	padding: 35px;
 	position: fixed;
+	/* safari fucks this */
 	mix-blend-mode: multiply;
 	z-index: 10;
 	transition: 0.5s;
