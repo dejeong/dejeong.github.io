@@ -1,0 +1,8 @@
+#myPicture {
+  height: 100vh;
+}
+
+#myPicture:hover {
+	cursor: url(../assets/next.png),pointer;
+  display: block;
+}
