@@ -2,7 +2,7 @@
   height: 100vh;
 }
 
-#myPicture:hover {
+#nextLink:hover {
 	cursor: url(../assets/next.png),pointer;
   display: block;
 }
